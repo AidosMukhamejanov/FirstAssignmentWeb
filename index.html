@@ -3,18 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>My First WebPage</title>
+	<link rel="stylesheet" href="css\style.css">
+	<link rel="icon" href="css\favicon.ico">
 </head>
-<body>
-	<h1>Aidos Mukhamejanov</h1>
-	<h2>Astana IT University, Computer Science</h2>
 
-	<table border="2" width="100%">
+<body>
+	<h1 id="main-heading">Aidos Mukhamejanov</h1>
+	<h2 class="uni">Astana IT University, Computer Science</h2>
+
+	<table border="2" width="100%" style="border: 1px solid black;">
 		<tr>
-			<th width="15%">Menu</th>
-			<th width="85%">Main Information</th>
+			<th width="15%" style="border: 1px solid black; border-radius: 10px;">Menu</th>
+			<th width="85%" style="border: 1px solid black; border-radius: 10px;">Main Information</th>
 		</tr>
 		<tr>
-			<td> <!--Added some Anchor Tags for faster navigation-->
+			<td style="border: 1px solid black; border-radius: 10px;"> <!--Added some Anchor Tags for faster navigation-->
 				Contest:<br>
 				<a href="#About me">About me</a><br>
 				<a href="#Ordered List">Ordered List</a><br>
@@ -25,13 +28,17 @@
 				<a href="#Emoji">Emoji</a><br>
 				<a href="#Form">Form</a>
 			</td>
-			<td>
-				<h3><a name="About me">About Me???</a></h3>
-	<p>I'm second year student in AITU. And also I'm in love with racing</p>
+			<td style="border: 1px solid black; border-radius: 10px;">
+	<div class="heading">
+	<h3 id="name"><a name="About me">About Me???</a></h3>
 
+	<p style="color:darkblue">I'm second year student in AITU. And also I'm in love with racing</p>
+	</div>
 	<hr>
 
-	<a name="Ordered List">Ordered List</a>
+	<div class="main-content">
+
+	<a name="Ordered List" class="highlight">Ordered List</a>
 
 	<ol>
 		<li>SimRacing</li>
@@ -41,13 +48,15 @@
 
 	<hr>
 
-	<a name="Undered List">Undered List</a>
+	<a name="Unodered List" class="highlight">Unodered List</a>
 
 	<ul>
 		<li><a href="https://www.formula1.com/" target="_blank" title="F1 Site"> F1 </a></li>
 		<li><a href="https://www.iracing.com/" target="_blank" title="iRacing"> iRacing </a></li>
 		<li><a href="https://lms.astanait.edu.kz/" target="_blank" title="Moodle">Moodle </a></li>
 	</ul>
+
+</div>
 
 	<hr>
 
@@ -64,7 +73,7 @@
 	</center>
 
 <hr>
-	
+<div class="footer">
 <a name="Schedule">Schedule</a>
 
 <table border="1" cellpadding="2" cellspacing="0">
@@ -81,7 +90,7 @@
         <tr><td>Kazakh</td><td>Wednesday</td><td>15:00–16:50</td></tr>
         <tr><td>Introduction to Functional programming</td><td>Thursday</td><td>14:00–15:50</td></tr>
 	</table>
-
+</div>
 <hr>
 
 <h3><a name="Table">Optional task</a></h3>
@@ -114,13 +123,35 @@
   	<input type="text" id="team" name="team"><br>
   	<label for="color">COLOR???</label><br>
   	<input type="color" id="color" name="color">
-  	<input type="submit" value="Submit"
+  	<input type="submit" value="Submit">
 </form>
-			</td>
-		</tr>
-	
-</table>
+	<hr>
+	<div class="static-box">
+		<p>MAX WINS IN BAKU 2025!</p>
+	</div>
 
+	<div class="relative-box">
+		<p>GEORGE RUSSEL TAKES SECOND PLACE!</p>
+	</div>
+
+	<div class="absolute-box">
+	<p>CARLOS TAKES HIS FIRST PODIUM WITH WILLIAMS!</p>
+	</div>
+
+
+    <div class="box-left">
+      <h3>Left Box</h3>
+      <p>Left.</p>
+    </div>
+
+    <div class="box-right">
+      <h1>Right Box</h1>
+      <p>Right.</p>
+	</div>
+
+	<div class="clear"></div>
+
+
+</table>
 </body>
 </html>
-
